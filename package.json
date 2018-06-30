@@ -1,0 +1,37 @@
+{
+  "name": "fastify-starter-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:SarasArya/fastify-starter-project.git",
+  "author": "Saras Arya <saras.arya@rentomojo.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "fastify start -l info -p 4000 index.js",
+    "dev:start": "nodemon --exec yarn start",
+    "precommit": "lint-staged",
+    "prepush": "echo 'Hello world'"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix .",
+      "git add ."
+    ]
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "fastify": "^1.7.0",
+    "fastify-autoload": "^0.4.0",
+    "fastify-plugin": "^1.1.3",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "fastify-cli": "^0.16.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.7"
+  }
+}
