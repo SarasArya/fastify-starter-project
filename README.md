@@ -15,7 +15,7 @@ A minimal project written to showcase concepts of fastify. Plugins, Models, Cont
     a. In case you dont have docker installed. Head [here](https://docs.docker.com/install/)  
     b. Check if you have docker daemon running using docker -v.  
     c. If no, google error, If yes run docker pull mongo:3.4.0.  
-    d. docker run --name rylah-mongo -d -p 27017:27017 mongo:3.4.0  
+    d. docker run --name my-mongo -d -p 27017:27017 mongo:3.4.0  
     e. And you have a mongo server running.
 
 3.  If developing run `yarn dev:start`.

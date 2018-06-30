@@ -7,7 +7,7 @@ async function dbConnector(fastify, opts, next) {
   try {
     const autoIndex = !!(NODE_ENV !== 'production' || NODE_ENV !== 'staging');
     const connection = await mongoose.connect(
-      'mongodb://localhost:27017/rylahdb',
+      'mongodb://localhost:27017/testdb',
       { autoIndex }
     );
     fastify.decorate('mongoose', connection).addHook('onClose', (fastifyContext, done) => {
