@@ -1,5 +1,7 @@
 **Fastify Starter Kit**
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 Backend written in Javascript with ♥️.  
 Powered by Fastify for Minimal Overhead and Max Performance 🚀  
 DB Powered by MongoDb 🍃 and ORM is Mongoose 🐻
